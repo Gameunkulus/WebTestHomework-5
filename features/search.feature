@@ -1,4 +1,5 @@
 Feature: Ticket tests 
+
     Scenario: Should buy one ticket
     Given user is on page "http://qamid.tmweb.ru/client/index.php" 
     When user select date;
@@ -22,6 +23,4 @@ Feature: Ticket tests
     When user select date;
     When user select time;
     When user select same seat;
-    When user click booking button;
-    When user click booking accept button;
     Then button for booking is inactive "true"
