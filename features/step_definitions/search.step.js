@@ -39,18 +39,18 @@ When("user select time;", async function () {
 
 When("user select one seat;", async function () {
     // Write code here that turns the phrase above into concrete actions
-    return await clickElement(this.page, ".buying-scheme__wrapper div:nth-child(3) span:nth-child(4)");
+    return await clickElement(this.page, ".buying-scheme__wrapper div:nth-child(2) span:nth-child(1)");
 });
 
 When("user select same seat;", async function () {
     // Write code here that turns the phrase above into concrete actions
-    return await clickElement(this.page, ".buying-scheme__wrapper div:nth-child(3) span:nth-child(4)");
+    return await clickElement(this.page, ".buying-scheme__wrapper div:nth-child(2) span:nth-child(1)");
 });
 
 When("user select two seats;", async function () {
     // Write code here that turns the phrase above into concrete actions
-    return await clickElement(this.page, ".buying-scheme__wrapper div:nth-child(5) span:nth-child(4)");
-    return await clickElement(this.page, ".buying-scheme__wrapper div:nth-child(5) span:nth-child(5)");
+    return await clickElement(this.page, ".buying-scheme__wrapper div:nth-child(7) span:nth-child(2)");
+    return await clickElement(this.page, ".buying-scheme__wrapper div:nth-child(7) span:nth-child(3)");
 });
 
 When("user click booking button;", async function () {
