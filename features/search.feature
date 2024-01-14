@@ -6,17 +6,15 @@ Feature: Ticket tests
     When user select time;
     When user select one seat;
     When user click booking button;
-    When user click booking accept button;
-    Then user get text "Покажите QR-код нашему контроллеру для подтверждения бронирования."
+    Then user get text "После оплаты билет будет доступен в этом окне,"
     
-    Scenario: Should buy two ticket
+    Scenario: Should buy two tickets
     Given user is on page "http://qamid.tmweb.ru/client/index.php" 
     When user select date;
     When user select time;
     When user select two seats;
     When user click booking button;
-    When user click booking accept button;
-    Then user get text "Покажите QR-код нашему контроллеру для подтверждения бронирования."
+    Then user get text "После оплаты билет будет доступен в этом окне,"
 
     Scenario: Sad path
     Given user is on page "http://qamid.tmweb.ru/client/index.php" 

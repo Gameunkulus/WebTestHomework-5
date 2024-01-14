@@ -39,28 +39,28 @@ When("user select time;", async function () {
 
 When("user select one seat;", async function () {
     // Write code here that turns the phrase above into concrete actions
-    return await clickElement(this.page, '.buying-scheme__row > span:nth-child(4)');
-});
-
-When("user select two seats;", async function () {
-    // Write code here that turns the phrase above into concrete actions
-    return await clickElement(this.page, '.buying-scheme__row > span:nth-child(5)');
-    return await clickElement(this.page, '.buying-scheme__row > span:nth-child(6)');
+    return await clickElement(this.page, ".buying-scheme__wrapper div:nth-child(3) span:nth-child(4)");
 });
 
 When("user select same seat;", async function () {
     // Write code here that turns the phrase above into concrete actions
-    return await clickElement(this.page, '.buying-scheme__row > span:nth-child(4)');
+    return await clickElement(this.page, ".buying-scheme__wrapper div:nth-child(3) span:nth-child(4)");
+});
+
+When("user select two seats;", async function () {
+    // Write code here that turns the phrase above into concrete actions
+    return await clickElement(this.page, ".buying-scheme__wrapper div:nth-child(5) span:nth-child(4)");
+    return await clickElement(this.page, ".buying-scheme__wrapper div:nth-child(5) span:nth-child(5)");
 });
 
 When("user click booking button;", async function () {
     // Write code here that turns the phrase above into concrete actions
-    return await clickElement(this.page, 'button.acceptin-button');
+    return await clickElement(this.page, `button.acceptin-button`);
 });
 
-When("user click booking accept button;", async function () {
+When("user click accept code button;", async function () {
     // Write code here that turns the phrase above into concrete actions
-    return await clickElement(this.page, getText(this.page, "Получить код бронирования"));
+    return await clickElement(this.page, `button.acceptin-button`);
 });
 
 Then("user get text {string}", async function (string) {
